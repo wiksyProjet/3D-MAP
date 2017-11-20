@@ -1,0 +1,212 @@
+/*texxtarea copy*/
+#to-copy{
+	position: fixed;
+	top : -500px;
+}
+
+#copy{
+	width: 50%;
+    margin-left: 20%;
+    margin-top: 3.5%;
+    margin-bottom: 3.5%;
+    border: none;
+    padding: 2%;
+    background-color: #636363;
+    color: #daf3f9;
+}
+
+#copy:hover{
+	background-color: #a1a1a1;
+	-webkit-transition: background-color 1000ms linear;
+	-ms-transition: background-color 1000ms linear;
+	transition: background-color 1000ms linear;
+}
+
+/*LISTE CLIENT*/
+.listeMedia{
+	width: 100%;
+}
+
+#tableMedia {
+	margin: 0;
+	text-align: center;
+	width: 100%;
+}
+
+#tableMedia thead, #tableMedia tbody, #tableMedia tr, #tableMedia td, #tableMedia th { display: block; }
+
+#tableMedia tr:after {
+	content: ' ';
+	display: block;
+	visibility: hidden;
+	clear: both;
+}
+
+#tableMedia thead th {
+	text-align: center;
+	height: 30px;
+}
+
+#tableMedia tbody {
+	height: 120px;
+	overflow-y: auto;
+}
+
+
+#tableMedia tbody td, #tableMedia thead th {
+	width: 33.3%;
+	float: left;
+}
+
+#tableMedia tbody td{
+	padding : 0;
+	white-space: nowrap;
+	overflow-x: hidden;
+}
+
+
+/*MEDIA CONTENT*/
+#mediaForm{
+	width: 100%;
+	margin-left: 5%;
+	padding-bottom: 5%;
+}
+
+#mediaForm select, #mediaForm input[type=file] {
+	margin-top: 1%;
+	background-color: #f9fbfe;
+	width: 30%;
+	font-size: 15px;
+}
+
+/*IMG FORM*/
+#imgForm{
+	margin-left: 5%;
+}
+
+.drop{
+	margin-top: 2.5%;
+	margin-right: 5%;
+	display: inline-block;
+	height: 100px;
+	width: 300px;
+	border: 3px dashed #BBBBBB;
+	line-height:50px;
+	text-align: center;
+}
+
+#uploadimg{
+	width: 20%;
+}
+
+#imgSend{
+	width: 20%;
+}
+
+.barre{
+	margin-top: 2%;
+	margin-bottom: 2%;
+	width: 90%;
+	height: 2px;
+	background-color: #cacaca;
+}
+
+.containImg{
+	width: 90%;
+	margin-top: 3%;
+	border : 2px solid #cacaca;
+}
+
+.commentaireImg{
+	background-color: #f9fbfe;
+	max-width: 85%;
+	width: 50%;
+	overflow-y: hidden;
+	display: inline-block;
+}
+
+.file img{
+	z-index: 4;
+	margin-left: 1%;
+	margin-top : 1%;
+	width: 80%;
+	vertical-align : top;
+}
+
+.groupImg{
+	vertical-align: middle;
+	display: inline-block;
+	width: 30%;
+}
+
+.groupTag{
+	vertical-align: top;
+	display: inline-block;
+	width: 50%;
+}
+
+.groupTag input{
+	padding: 0;
+	background-color: #f9fbfe;
+	margin-bottom: 3%;
+}
+
+#updateImg img{
+	width: 90%;
+}
+
+#changeImg {
+	margin: 1%;
+	width: 80% !important;
+}
+
+
+
+.ligneMedia:hover{
+	cursor: pointer;
+}
+
+.colMedia:hover{
+	cursor : pointer;
+	background-color: #f3f2f2;
+}
+
+/*LISTE MEDIA*/
+
+#listeIDMedia{
+	display: none;
+	position: fixed;
+	z-index: 5;
+	width: 100%;
+	height: 100%;
+	overflow-y: scroll;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+#closeWindow{
+	position: absolute;
+	top: 0;
+	right: 0;
+	border: none;
+	width: 20%;
+	height: 5%;
+	background-color: #51d1f3;
+}
+
+#searchMediaList{
+	width: 60%;
+	height: 5%;
+	border : none;
+	padding : 0;
+	text-align: center;
+	color : #515151;
+	display: inline-block;
+}
+
+#searchMediaType{
+	width: 20%;
+	margin : 0;
+	padding : 0;
+	display: inline-block;
+	height: 5%;
+}
