@@ -77,6 +77,11 @@
 		<!-- Recherche -->
 		<script type="text/javascript" src="js/classJS/recherche/recherche.js"></script>
 
+		<!-- Preparation -->
+		<script type="text/javascript" src="js/classJS/preparation/preparation.js"></script>
+		<script type="text/javascript" src="js/classJS/preparation/InterfacePreparation.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/preparation.css">
+
 </head>
 <body>
 	<span id="userProfil"><span class="glyphicon glyphicon-user" ></span></span>
@@ -996,7 +1001,6 @@
 						En construction !
 					</div>
 					<div id="panels-8">
-						En construction !
 						<table>
 							<tr>
 									<th>N° Commande</th>
@@ -1013,12 +1017,20 @@
 							</tr>
 						</table>
 
-						<div>
+							<div>
 								<h1>Numero de commande</h1>
-								<span>Référence</span>
-								<img id="photoCarte" src="emoji-content.png" alt="image"/>
-								<span>Quantité : 12</span>
-						</div>
+								<div class="produits">	<!--ça c'st la div qui represente le cadre qui apparait qd on clique sur une commande, ici faudra utiliser js je pense et faire les affichages en fction de ce qu'on a dans la bdd -->
+										<span>Référence</span>
+										<img id="photoCarte" src="emoji-content.png" alt="image"/>
+										<span>Quantité : 12</span>
+								</div>
+								<div class="produits">
+										<span>Référence</span>
+										<img id="photoCarte" src="emoji-content.png" alt="image"/>
+										<span>Quantité : 12</span>
+								</div>
+							</div>
+
 
 					</div>
 				</div>
