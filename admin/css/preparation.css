@@ -1,0 +1,14 @@
+#panels-8 div{
+  border : 1px solid black;
+}
+
+#panels-8 div h1{
+  background-color: blue;
+  color : white;
+  margin : 0;
+}
+
+#photoCarte{
+  width : 40px;
+  height : 40px;
+}
