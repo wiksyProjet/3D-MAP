@@ -1,4 +1,4 @@
-#panels-8 div{
+#panels-8 .produits{
   border : 1px solid black;
 }
 
@@ -8,7 +8,20 @@
   margin : 0;
 }
 
+#panels-8 #commande{
+    width : 50%
+}
+
 #photoCarte{
   width : 40px;
   height : 40px;
+}
+
+/*#boutons button{
+  border : 3px solid green;
+  width : 100px;
+}*/
+
+#boutons{
+    border : 2px solid gray;
 }
