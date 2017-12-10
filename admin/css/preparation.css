@@ -14,15 +14,14 @@
     margin-right : auto;
 }
 
-#photoCarte{
-  width : 40px;
-  height : 40px;
-}
-
 /*#boutons button{
   border : 3px solid green;
   width : 100px;
 }*/
+
+#commandes tr{
+  cursor : pointer;
+}
 
 #boutons{
   border : 1px solid black;
