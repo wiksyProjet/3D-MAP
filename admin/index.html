@@ -78,8 +78,8 @@
 		<script type="text/javascript" src="js/classJS/recherche/recherche.js"></script>
 
 		<!-- Preparation -->
-		<script type="text/javascript" src="js/classJS/preparation/preparation.js"></script>
-		<script type="text/javascript" src="js/classJS/preparation/InterfacePreparation.js"></script>
+		<!--<script type="text/javascript" src="js/classJS/preparation/Preparation.js"></script>-->
+		<!--<script type="text/javascript" src="js/classJS/preparation/InterfacePreparation.js"></script>-->
 		<link rel="stylesheet" type="text/css" href="css/preparation.css">
 
 </head>
@@ -1009,14 +1009,14 @@
 									<th>Montant</th>
 							</tr>
 							<!--ICI faudra faire des getClient, et tout ça, j'ai mis Saravanan mais c'st juste un ex-->
-							<tr>
+							<tr id="commandeUne">
 								<td>11234</td>
 								<td>Saravanan</td>
 								<td>Villetaneuse</td>
 								<td>325,75</td>
 							</tr>
 
-							<tr>
+							<tr id="commandeDeux">
 								<td>11235</td>
 								<td>Wassima</td>
 								<td>Garges-lès-Gonesse</td>
@@ -1041,13 +1041,15 @@
 
 							<tr id="boutons">
 								<td colspan=3>
-									<button>Expédier</button>
-									<button>Imprimer facture</button>
-									<button>Imprimer bon de livraison</button>
+									<button onclick="expedition()">Expédier</button>
+									<button onclick="impressionFacture()">Imprimer facture</button>
+									<button onclick="impressionBon()">Imprimer bon de livraison</button>
 								</td>
 							</tr>
 						</table>
 
+						<!--<script type="text/javascript" src="js/classJS/preparation/Preparation.js"></script>-->
+						<script type="text/javascript" src="js/classJS/preparation/InterfacePreparation.js"></script>
 
 							<!--<div>
 								<h1>Numero de commande</h1>

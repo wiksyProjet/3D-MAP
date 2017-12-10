@@ -36,4 +36,10 @@
 #boutons button{
   margin : 3px;
   /*margin-left : 0px;*/
+  transition-duration: 0.4s;
+}
+
+#boutons button:hover{
+  background-color: #138fef;
+  color: white;
 }
