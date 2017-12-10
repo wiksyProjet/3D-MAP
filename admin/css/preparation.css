@@ -9,7 +9,9 @@
 }
 
 #panels-8 #commande{
-    width : 50%
+    width : 65%
+    margin-left : auto;
+    margin-right : auto;
 }
 
 #photoCarte{
@@ -23,5 +25,15 @@
 }*/
 
 #boutons{
-    border : 2px solid gray;
+  border : 1px solid black;
+}
+
+#boutons td{
+  border : 1px solid black;
+  padding-left : 35%;
+}
+
+#boutons button{
+  margin : 3px;
+  /*margin-left : 0px;*/
 }
