@@ -17,6 +17,9 @@ function impressionBon(){
 
 function afficheCommande(nb){
   document.getElementById("commande").style.visibility = "visible";
-  alert(nb);
+  var commande = "commande"+nb;
+  document.getElementById(commande).style.transitionDuration = "0.4s";
+  document.getElementById(commande).style.backgroundColor = "#138fef";
+  //alert("Commande "+nb);
 }
-document.getElementById("commandeUn").onclick = afficheCommande(1);
+//document.getElementById("commandeUn");

@@ -36,10 +36,17 @@
 #boutons button{
   margin : 3px;
   /*margin-left : 0px;*/
+  padding : 4px;
+  border : none;
+  border-color: green;
+  border-radius: 10px;
+  color : white;
   transition-duration: 0.4s;
+  background-color: #138fef;
 }
 
 #boutons button:hover{
-  background-color: #138fef;
+  background-color: green;
+  border-color : white;
   color: white;
 }
