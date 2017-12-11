@@ -9,6 +9,7 @@ function expedition(){
 
 function impressionFacture(){
 	alert('On imprime la facture');
+	print();
 }
 
 function impressionBon(){
@@ -24,4 +25,8 @@ function afficheCommande(nb){
   document.getElementById(commande).style.fontWeight = "bold";
   //alert("Commande "+nb);
 }
+
+$("#expeditio").click(function(){
+	Facture.expedition();
+})
 //document.getElementById("commandeUn");
