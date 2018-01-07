@@ -1,6 +1,6 @@
 /*LISTE CLIENT*/
 .listeClient{
-	width: 100%;
+	width: 100%;;
 }
 
 #tableClient {
@@ -67,7 +67,7 @@
 
 #recapClient input{
 	margin-bottom: 3%;
-	margin-top: 1%;	
+	margin-top: 1%;
 }
 
 .combo{
