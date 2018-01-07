@@ -22,6 +22,10 @@
 #commandes tr{
   cursor : pointer;
 }
+#commandes th{
+  border-bottom : 1px ridge black;
+
+}
 
 #boutons{
   border : 1px solid black;
