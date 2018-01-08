@@ -9,6 +9,33 @@
 }*/
 #tablePrep thead, #tablePrep tbody, #tablePrep tr, #tablePrep td, #tablePrep th { display: block; }
 
+#tablePrep tr:after {
+	content: ' ';
+	display: block;
+	visibility: hidden;
+	clear: both;
+}
+
+#tablePrep thead th {
+	text-align: center;
+	height: 30px;
+}
+
+#tablePrep tbody {
+	height: 120px;
+	overflow-y: auto;
+}
+
+#tablePrep tbody td, #tablePrep thead th {
+	width: 25%;
+	float: left;
+}
+
+#tablePrep tbody td{
+	padding : 0;
+	white-space: nowrap;
+	overflow-x: hidden;
+}
 #panels-8 #tablePrep{
   margin: 0;
   text-align: center;
