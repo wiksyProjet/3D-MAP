@@ -2,30 +2,30 @@
   border : 1px solid black;
 }
 
-#panels-8 div h1{
+#/*panels-8 div h1{
   background-color: #138fef;
   color : white;
   margin : 0;
-}
+}*/
+#tablePrep thead, #tablePrep tbody, #tablePrep tr, #tablePrep td, #tablePrep th { display: block; }
 
-#panels-8 #commande{
-    width : 65%
-    margin-left : auto;
-    margin-right : auto;
+#panels-8 #tablePrep{
+  margin: 0;
+  text-align: center;
+  width: 100%;
 }
-
+.ListePrep{
+  width:100%;
+}
 /*#boutons button{
   border : 3px solid green;
   width : 100px;
 }*/
 
-#commandes tr{
+#tablePrep tr{
   cursor : pointer;
 }
-#commandes th{
-  border-bottom : 1px ridge black;
 
-}
 
 #boutons{
   border : 1px solid black;
