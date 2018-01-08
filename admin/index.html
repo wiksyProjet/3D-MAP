@@ -235,7 +235,7 @@
 						<li class="menuPanel" id="productPanel"><a href="#panels-5">Produit</a></li>
 						<li class="menuPanel" id="variablePanel"><a href="#panels-6">Variables</a></li>
 						<li class="menuPanel"><a href="#panels-7">Stats</a></li>
-						<li class="menuPanel"><a href="#panels-8">Préparation</a></li>
+						<li class="menuPanel" id="preparationPanel"><a href="#panels-8">Préparation</a></li>
 					</ul>
 					<div id="panels-1">
 						<div id="listContainer">
@@ -1001,29 +1001,30 @@
 						En construction !
 					</div>
 					<div id="panels-8">
-						<table id="commandes">
-							<tr>
-									<th>N° Commande  <img src="img/commande.png" alt="logo commande" width="40px" height="40px" /></th>
-									<th>Client  <img src="img/client.png" alt="logo client" width="30px" height="30px" /></th>
-									<th>Adresse   <img src="img/localisation.png" alt="logo localisation" width="30px" height="30px" /></th>
-									<th>Montant  <img src="img/logoArgent.png" alt="logo dollars" width="20px" height="20px" /></th>
-							</tr>
-							<!--ICI faudra faire des getClient, et tout ça, j'ai mis Saravanan mais c'st juste un ex-->
-							<tr onclick = "afficheCommande(1)" id="commande1">
-								<td><font size=15>11234</font></td>
-								<td>Saravanan</td>
-								<td>Villetaneuse</td>
-								<td>325,75</td>
-							</tr>
+						<div class="ListePrep">
+							<table class="table table-striped" id="tablePrep">
+								<tr>
+										<th>N° Commande  <img src="img/commande.png" alt="logo commande" width="40px" height="40px" /></th>
+										<th>Client  <img src="img/client.png" alt="logo client" width="30px" height="30px" /></th>
+										<th>Adresse   <img src="img/localisation.png" alt="logo localisation" width="30px" height="30px" /></th>
+										<th>Montant  <img src="img/logoArgent.png" alt="logo dollars" width="20px" height="20px" /></th>
+								</tr>
+								<!--ICI faudra faire des getClient, et tout ça, j'ai mis Saravanan mais c'st juste un ex-->
+								<tr onclick = "afficheCommande(1)" id="commande1">
+									<td><font size=15>11234</font></td>
+									<td>Saravanan</td>
+									<td>Villetaneuse</td>
+									<td>325,75</td>
+								</tr>
 
-							<tr onclick = "afficheCommande(2)" id="commande2">
-								<td><font size=15>11235</font</td>
-								<td>Wassima</td>
-								<td>Garges-lès-Gonesse</td>
-								<td>103,99</td>
-							</tr>
-						</table>
-
+								<tr onclick = "afficheCommande(2)" id="commande2">
+									<td><font size=15>11235</font></td>
+									<td>Wassima</td>
+									<td>Garges-lès-Gonesse</td>
+									<td>103,99</td>
+								</tr>
+							</table>
+						</div>
 
 						<table id="commande">
 							<tr colspan=3><th>Commande n° 11234</th></tr>
