@@ -78,8 +78,9 @@
 		<script type="text/javascript" src="js/classJS/recherche/recherche.js"></script>
 
 		<!-- Preparation -->
-		<!--<script type="text/javascript" src="js/classJS/preparation/Preparation.js"></script>-->
-		<!--<script type="text/javascript" src="js/classJS/preparation/InterfacePreparation.js"></script>-->
+		<!--<script type="text/javascript" src="js/classJS/preparation/Preparation.js"></script>
+		<script type="text/javascript" src="js/classJS/preparation/InterfacePreparation.js"></script>-->
+		<!--<script type="text/javascript" src="js/eventJS/event.js"></script>-->
 		<link rel="stylesheet" type="text/css" href="css/preparation.css">
 
 </head>
@@ -117,7 +118,7 @@
 		<pre id="dialog-content"></pre>
 	</div>
 
-	<!--<div id="auth">
+	<div id="auth">
 		<div id="contentAuth">
 			<h1>Authentification</h1>
 			<input type="text" name="username" placeholder="username" id="login">
@@ -125,7 +126,7 @@
 			<button class="btn btn-default" id="connexion">Connexion</button>
 			<p id="messageLogin"><span class="glyphicon glyphicon-warning-sign"></span>Erreur login</p>
 		</div>
-	</div>-->
+	</div>
 
 	<div class="container">
 		<div class="row">
@@ -1001,6 +1002,7 @@
 						En construction !
 					</div>
 					<div id="panels-8">
+						En construction !
 						<table id="commandes">
 							<tr>
 									<th>N° Commande</th>
@@ -1008,8 +1010,8 @@
 									<th>Adresse</th>
 									<th>Montant</th>
 							</tr>
-							<!--ICI faudra faire des getClient, et tout ça, j'ai mis Saravanan mais c'st juste un ex-->
-							<tr onclick = "afficheCommande(1)" id="commande1">
+
+							<tr onclick = "value()" id="commande1">
 								<td>11234</td>
 								<td>Saravanan</td>
 								<td>Villetaneuse</td>
@@ -1023,7 +1025,6 @@
 								<td>103,99</td>
 							</tr>
 						</table>
-
 
 						<table id="commande">
 							<tr colspan=3><th>Commande n° 11234</th></tr>
@@ -1041,35 +1042,16 @@
 
 							<tr id="boutons">
 								<td colspan=3>
-									<button onclick="expedition()" id="expedition">Expédier</button>
-									<button onclick="impressionFacture()">Imprimer facture</button>
-									<button onclick="impressionBon()">Imprimer bon de livraison</button>
+									<button id="boutonExpedition">Expédier</button>
+									<button id="boutonFacture">Imprimer facture</button>
+									<button id="boutonBonLivraison">Imprimer bon de livraison</button>
 								</td>
 							</tr>
 						</table>
 
-						<!--<script type="text/javascript" src="js/classJS/preparation/Preparation.js"></script>-->
+
+						<script type="text/javascript" src="js/classJS/preparation/Preparation.js"></script>
 						<script type="text/javascript" src="js/classJS/preparation/InterfacePreparation.js"></script>
-
-							<!--<div>
-								<h1>Numero de commande</h1>
-								<div class="produits">	<!ça c'st la div qui represente le cadre qui apparait qd on clique sur une commande, ici faudra utiliser js je pense et faire les affichages en fction de ce qu'on a dans la bdd>
-										<span>001</span>
-										<img id="photoCarte" src="emoji-content.png" alt="image"/>
-										<span>X 3</span>
-								</div>
-								<div class="produits">
-										<span>002</span>
-										<img id="photoCarte" src="emoji-content.png" alt="image"/>
-										<span>X 12</span>
-								</div>
-								<div id="boutons">
-									<!form method="GET" action="#">
-										<input type="button" value="Expédier">
-									</form>>
-
-							</div>-->
-
 
 					</div>
 				</div>
