@@ -1,0 +1,69 @@
+/*LISTE Variable*/
+.listeVariable{
+	width: 100%;
+}
+
+#tableVariable {
+	margin: 0;
+	text-align: center;
+	width: 100%;
+}
+
+#tableVariable thead, #tableVariable tbody, #tableVariable tr, #tableVariable td, #tableVariable th { display: block; }
+
+#tableVariable tr:after {
+	content: ' ';
+	display: block;
+	visibility: hidden;
+	clear: both;
+}
+
+#tableVariable thead th {
+	text-align: center;
+	height: 30px;
+}
+
+#tableVariable tbody {
+	height: 120px;
+	overflow-y: auto;
+}
+
+
+#tableVariable tbody td, #tableVariable thead th {
+	width: 50%;
+	float: left;
+}
+
+#tableVariable tbody td{
+	padding : 0;
+	white-space: nowrap;
+	overflow-x: hidden;
+}
+
+
+.ligneVariable:hover{
+	cursor: pointer;
+}
+
+.colVariable:hover{
+	cursor : pointer;
+	background-color: #f3f2f2;
+}
+
+/*FORMULAIRE VARIABLE*/
+
+#variableForm .inputContainer{
+	width: 40%;
+	display: inline-block;
+}
+
+.inputContainer{
+	margin-bottom: 3%;
+} 
+
+.descVar{
+}
+
+.align-topDiv{
+	vertical-align: top;
+}
