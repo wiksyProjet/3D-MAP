@@ -236,7 +236,7 @@
 						<li class="menuPanel" id="productPanel"><a href="#panels-5">Produit</a></li>
 						<li class="menuPanel" id="variablePanel"><a href="#panels-6">Variables</a></li>
 						<li class="menuPanel"><a href="#panels-7">Stats</a></li>
-						<li class="menuPanel"><a href="#panels-8">Préparation</a></li>
+						<li class="menuPanel" id="preparationPanel"><a href="#panels-8">Préparation</a></li>
 					</ul>
 					<div id="panels-1">
 						<div id="listContainer">
@@ -1002,6 +1002,7 @@
 						En construction !
 					</div>
 					<div id="panels-8">
+<<<<<<< HEAD
 						En construction !
 						<table id="commandes">
 							<tr>
@@ -1017,34 +1018,78 @@
 								<td>Villetaneuse</td>
 								<td>325,75</td>
 							</tr>
+=======
+						<div class="ListePrep">
+							<table class="table table-striped" id="tablePrep">
+								<thead>
+									<tr>
+>>>>>>> 80424d5c36e9fd231285fd85ecc0edf1339b6128
 
-							<tr onclick = "afficheCommande(2)" id="commande2">
-								<td>11235</td>
-								<td>Wassima</td>
-								<td>Garges-lès-Gonesse</td>
-								<td>103,99</td>
-							</tr>
-						</table>
+											<th>N° Commande</th>
+											<th>Client</th>
+											<th>Adresse</th>
+											<th>Montant</th>
 
+<<<<<<< HEAD
+=======
+									</tr>
+								</thead>
+								<tbody>
+									<!--ICI faudra faire des getClient, et tout ça, j'ai mis Saravanan mais c'st juste un ex-->
+									<tr onclick = "afficheCommande(1)" id="commande1">
+										<td><font size=7>11234</font></td>
+										<td>Saravanan</td>
+										<td>Villetaneuse</td>
+										<td>325,75</td>
+									</tr>
+
+									<tr onclick = "afficheCommande(2)" id="commande2">
+										<td><font size=7>11235</font></td>
+										<td>Wassima</td>
+										<td>Garges-lès-Gonesse</td>
+										<td>103,99</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+<<<<<<< HEAD
+						<table class="nav" id="commande">
+							<div>
+								<tr  colspan=3><th>Commande n° 11234</th></tr>
+							</div>
+=======
+>>>>>>> 80424d5c36e9fd231285fd85ecc0edf1339b6128
 						<table id="commande">
-							<tr colspan=3><th>Commande n° 11234</th></tr>
-							<tr class="produits">
-								<td>001</td>
+							<tr colspan=3><th colspan=4 style="background-color:blue;"> <img src="img/commande.png" alt="logo commande" width="80px" height="80px" /><font color=white size=12>Commande n° 11234</font></th></tr>
+>>>>>>> 2b3f2a4551057989e476c157117786d945b9d756
+							<tr class="produits" style="background-color:green;">
+								<td><font size=45>001</font></td>
 								<td><img class="photoCarte" src="massif-central.jpg" alt="massif-central" height="220" width="300"/></td>
-								<td>X 3</td>
+								<td><font size=45>X 3</font></td>
+								<td><img src="img/tic.svg" alt="logo tic" width="220px" height="220px" /></td>
 							</tr>
 
-							<tr class="produits">
-								<td>002</td>
+							<tr class="produits" style="background-color:orange;">
+								<td><font size=45>002</font></td>
 								<td><img class="photoCarte" src="carte-vosges.png" alt="vosges" height="300" width="300"/></td>
-								<td>X 12</td>
+								<td><font size=45>X 12</font></td>
+								<td>     <img src="img/en_cours.png" alt="logo tic" width="120px" height="120px" style="margin-left:80px;" /></td>
 							</tr>
 
 							<tr id="boutons">
+<<<<<<< HEAD
 								<td colspan=3>
 									<button id="boutonExpedition">Expédier</button>
 									<button id="boutonFacture">Imprimer facture</button>
 									<button id="boutonBonLivraison">Imprimer bon de livraison</button>
+=======
+								<td colspan=4>
+									<button onclick="expedition()" id="expedition"><img src="img/expedition.png" alt="logo expedition" width="40px" height="20px" />  Expédier</button>
+									<button onclick="impressionFacture()"><img src="img/impression.png" alt="logo impression" width="30px" height="20px" />Imprimer facture</button>
+									<button onclick="impressionBon()"><img src="img/impression.png" alt="logo impression" width="30px" height="20px" />Imprimer bon de livraison</button>
+
+>>>>>>> 80424d5c36e9fd231285fd85ecc0edf1339b6128
 								</td>
 							</tr>
 						</table>

@@ -2,26 +2,60 @@
   border : 1px solid black;
 }
 
-#panels-8 div h1{
+/*#panels-8 div h1{
   background-color: #138fef;
   color : white;
   margin : 0;
+}*/
+#tablePrep thead, #tablePrep tbody, #tablePrep tr, #tablePrep td, #tablePrep th { display: block; }
+
+#tablePrep tr:after {
+	content: ' ';
+	display: block;
+	visibility: hidden;
+	clear: both;
 }
 
-#panels-8 #commande{
-    width : 65%
-    margin-left : auto;
-    margin-right : auto;
+#tablePrep thead th {
+	text-align: center;
+	height: 30px;
 }
 
+#tablePrep tbody {
+	height: 120px;
+	overflow-y: auto;
+}
+
+#tablePrep tbody td, #tablePrep thead th {
+	width: 25%;
+	float: left;
+}
+
+#tablePrep tbody td{
+	padding : 0;
+	white-space: nowrap;
+	overflow-x: hidden;
+  text-align: center;
+
+}
+
+#panels-8 #tablePrep{
+  margin: 0;
+  text-align: center;
+  width: 100%;
+}
+.ListePrep{
+  width:100%;
+}
 /*#boutons button{
   border : 3px solid green;
   width : 100px;
 }*/
 
-#commandes tr{
+#tablePrep tr{
   cursor : pointer;
 }
+
 
 #boutons{
   border : 1px solid black;
@@ -30,6 +64,7 @@
 #boutons td{
   border : 1px solid black;
   padding-left : 35%;
+
 }
 
 #boutons button{
