@@ -2,14 +2,14 @@
   border : 1px solid black;
 }
 
-#/*panels-8 div h1{
+/*#panels-8 div h1{
   background-color: #138fef;
   color : white;
   margin : 0;
 }*/
 #tablePrep thead, #tablePrep tbody, #tablePrep tr, #tablePrep td, #tablePrep th { display: block; }
 
-+#tablePrep tr:after {
+#tablePrep tr:after {
 	content: ' ';
 	display: block;
 	visibility: hidden;
@@ -35,6 +35,8 @@
 	padding : 0;
 	white-space: nowrap;
 	overflow-x: hidden;
+  text-align: center;
+
 }
 
 #panels-8 #tablePrep{
@@ -62,6 +64,7 @@
 #boutons td{
   border : 1px solid black;
   padding-left : 35%;
+
 }
 
 #boutons button{
