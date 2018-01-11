@@ -11,7 +11,7 @@ var test = ["Naruto","Sasuke","Kakashi","Obito"];
 
 var InterfacePreparation = {
 
-    afficheCommandes : function(data){
+    afficheAllCommandes : function(data){
 
     for(var com in data){
 
@@ -32,9 +32,26 @@ var InterfacePreparation = {
       document.getElementById("preparationCommandes").innerHTML += row;
     }
 
-  }
+  },
 
+  afficheCommande : function(data) {
+    for(var com in data){
+
+      var row = "<tr><td>"+data[com].refCommande+"</td>";
+      row += "<td>"+data[com].livraison.nom+" "+data[com].livraison.prenom+"</td>";
+      row += "<td>"+data[com].livraison.adresse+"</td>";
+
+      var prixTotal = 0;
+      for(prod in data[com].commande){
+        prixTotal +=parseFloat(data[com].commande[prod].prixTTC);
+      }
+      row += "<td>"+prixTotal.toFixed(2)+"</td></tr>";
+
+      document.getElementById("preparationCommandes").innerHTML += row;
+  }
 }
+
+};
 
 
 
