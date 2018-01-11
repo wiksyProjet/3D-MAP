@@ -67,7 +67,7 @@
 		<script type="text/javascript" src="js/classJS/media/Media.js"></script>
 		<script type="text/javascript" src="js/classJS/media/InterfaceMedia.js"></script>
 		<script type="text/javascript" src="js/eventJS/mediaEvent.js"></script>
-		<link rel="stylesheet" type="text/css" href="css/media.css">
+		<!--<link rel="stylesheet" type="text/css" href="css/media.css">-->
 
 		<!-- Vairable -->
 		<script type="text/javascript" src="js/classJS/variable/Variable.js"></script>
@@ -76,6 +76,10 @@
 
 		<!-- Recherche -->
 		<script type="text/javascript" src="js/classJS/recherche/recherche.js"></script>
+
+		<!-- Preparation -->
+		<script type="text/javascript" src="js/classJS/preparation/Preparation.js"></script>
+		<script type="text/javascript" src="js/classJS/preparation/InterfacePreparation.js"></script>
 
 </head>
 <body>
@@ -237,7 +241,7 @@
 						<li class="menuPanel" id="productPanel"><a href="#panels-5">Produit</a></li>
 						<li class="menuPanel" id="variablePanel"><a href="#panels-6">Variables</a></li>
 						<li class="menuPanel"><a href="#panels-7">Stats</a></li>
-						<li class="menuPanel"><a href="#panels-8">Préparation</a></li>
+						<li class="menuPanel" id="preparationPanel"><a href="#panels-8">Préparation</a></li>
 					</ul>
 					<div id="panels-1">
 						<div id="listContainer">
@@ -1012,11 +1016,15 @@
 
 
 					<div id="panels-8">
-						<div >Cliquer ici</div>
+						<table id="preparationCommandes">
+							<tr>
+								<th>N° commande</th>
+								<th>Client</th>
+								<th>Adresse de livraison</th>
+								<th>Montant</th>
+							</tr>
+						<table>
 					</div>
-
-					<!-- Preparation -->
-<script type="text/javascript" src="js/classJS/preparation/Preparation.js"></script>
 
 
 					</div>

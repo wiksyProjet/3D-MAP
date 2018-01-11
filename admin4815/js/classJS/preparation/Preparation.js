@@ -1,23 +1,24 @@
 alert("prep.js");
 
 var Preparation = {
-	donnees = [],
+	donnees : [],
 
 	RechercheExpeditions : function(){
-		JNTP.execute(["getExpedition", {"filter" :{}], function(j){
+		JNTP.execute(["getExpedition", {"filter" :{}}], function(j){
 			if(typeof(j.body.length) != 0){
 				this.donnees = j.body;
-				//value["id"] = j.commande.ref;
-				console.log(this);
-		} else {
-			alert("Pas d'expedition prévue pour commande");
-		}
-	})
-
-}
+			//	document.getElementById("preparationCommandes").innerHTML += "<Jss dans RechercheExpeditions</p>";
+				console.log(this.donnees);
+				InterfacePreparation.afficheCommandes(this.donnees);
+				//document.getElementById("preparationCommandes").innerHTML += "</table>"
+				//return j.body;
+			} else document.getElementById("preparationCommandes").innerHTML += "Aucune expedition prévue";
+		})
+	}
 
 };
 
+$("#preparationPanel").click(Preparation.RechercheExpeditions());
 
 
 /*Preparation.client = "Anna";
