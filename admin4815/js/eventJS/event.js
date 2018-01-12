@@ -1,11 +1,11 @@
 $(document).ready(function(){
 	$("table").hover(function(){
 		//in
-		$("body").css("height","100%"); 
+		$("body").css("height","100%");
 		$("body").css("overflow-y", "hidden");
 	}, function(){
 		//out
-		$("body").css("height","auto"); 
+		$("body").css("height","auto");
 		$("body").css("overflow-y", "auto");
 	})
 
@@ -113,7 +113,7 @@ $(document).ready(function(){
 		$("#listeIDMedia").fadeIn("slow");
 		$("#containResultProduct").empty();
 		$("#searchMediaList").val("");
-	});	
+	});
 
 
 	$("#validationProduct").click(function(){
@@ -357,8 +357,8 @@ $(document).ready(function(){
 	$( "#delai" ).change(function() {
 		var t = new Date().getTime();
 		t += (parseInt($("#delai").val()) * 24 * 3600 * 1000);
-		
-		var date = new Date(t); 
+
+		var date = new Date(t);
 		if($("#delai").val().includes("fin"))
 			date.setDate(28);
 
@@ -377,7 +377,7 @@ $(document).ready(function(){
 			'<div id="reponse" style="display:none">Client ajouté</div>'
 			);
 		$("#reponse").slideDown("normal");
-		setTimeout(function(){ 
+		setTimeout(function(){
 			$("#reponse").slideUp("normal");
 		}, 2000);
 	});
@@ -417,19 +417,19 @@ $(document).ready(function(){
 	$("#typeRecherche").change(function(){
 		var tags = Client.entrepriseTags;
 		switch($(this).val()){
-			case "entreprise" : 
+			case "entreprise" :
 			tags = Client.entrepriseTags;
 			break;
 			case "adresse" :
 			tags = Client.adresseTags;
 			break;
-			case "codePostal" : 
+			case "codePostal" :
 			tags = Client.codePostalTags;
 			break;
-			case "ville" : 
+			case "ville" :
 			tags = Client.villeTags;
 			break;
-			default : 
+			default :
 			tags = "";
 			break;
 		}
@@ -446,7 +446,7 @@ $(document).ready(function(){
 
 	$("#pointer").click(function(){
 		$('#containSearch').animate({
-			left : "0%",	
+			left : "0%",
 		}, 750, function(){
 			$("#pointer").fadeOut("slow");
 			$("#croix").fadeIn("slow");
@@ -456,7 +456,7 @@ $(document).ready(function(){
 	$("#croix").click(function(){
 		$("#croix").fadeOut("fast", function(){
 			$('#containSearch').animate({
-				left : "-18%",	
+				left : "-18%",
 			}, 750, function(){
 				$("#pointer").fadeIn("slow");
 			});
@@ -501,7 +501,7 @@ $(document).ready(function(){
 				$("#login").val(" ");
 				$("#mdp").val(" ");
 				$('#auth').animate({
-					marginTop: '+100%',	
+					marginTop: '+100%',
 				}, 750);
 				init();
 			}
@@ -522,7 +522,7 @@ $(document).ready(function(){
 			JNTP.execute(["auth", {"login" : login, "mdp" : mdp} ], function(j){
 				if(JNTP.authentified){
 					$('#auth').animate({
-						marginTop: '+100%',	
+						marginTop: '+100%',
 					}, 750);
 					init();
 				}
@@ -543,7 +543,7 @@ $(document).ready(function(){
 			JNTP.execute(["auth", {"login" : login, "mdp" : mdp}], function(j){
 				if(JNTP.authentified){
 					$('#auth').animate({
-						marginTop: '+100%',	
+						marginTop: '+100%',
 					}, 750);
 					init();
 				}
@@ -633,5 +633,18 @@ $(document).ready(function(){
 			$("#qt-"+id).val(0);
 		}
 	});
+
+	//$(".ligCommande").click(function(){
+	/*$("#test").click(function(){
+		alert("jai cliqué");
+		//var row = this;
+		//this.setAttribute("ligCommande-clic");
+	});*/
+
+	$("#preparationCommandes").on("click", ".ligCommande", function(){
+		var clicked = document.getElementById("ligCommande-clic");
+		if(clicked) clicked.removeAttribute("id");
+		this.setAttribute("id","ligCommande-clic");
+	})
 
 });

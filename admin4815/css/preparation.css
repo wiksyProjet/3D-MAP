@@ -1,0 +1,36 @@
+#alert{
+  color : red;
+  font-size : 30px;
+  text-align : center;
+  padding :8px;
+}
+
+.ligCommande:hover{
+  color : green;
+
+}
+
+#ligCommande-clic{
+  /*color : green;*/
+  transition-duration: 0.4s;
+  font-weight : bold;
+  background-color : #138fef;
+  color : white;
+}
+
+/*.produitCommande, #numCommande{
+  display: none;
+}*/
+
+#cadreCommande{
+  display: none;
+}
+
+.produitCommande-clic{
+  display: inline-block;
+  background-color: gray;
+}
+
+#numCommande-clic{
+  background-color: green;
+}

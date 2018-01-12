@@ -1,4 +1,4 @@
-alert("prep.js");
+//alert("prep.js");
 
 var Preparation = {
 	donnees : [],
@@ -12,37 +12,26 @@ var Preparation = {
 				InterfacePreparation.afficheAllCommandes(this.donnees);
 				//document.getElementById("preparationCommandes").innerHTML += "</table>"
 				//return j.body;
-			} else document.getElementById("preparationCommandes").innerHTML += "<p>Aucune expedition prévue</p>";
+			} else InterfacePreparation.alertMessage("Aucune expedition prévue pour le moment");
+			//document.getElementById("preparationCommandes").innerHTML += "<p>Aucune expedition prévue</p>";
 		})
 	},
 
 	RechercheExpedition : function(id){
 		JNTP.execute(["getExpedition", {"filter" :{"ID" : id}}], function(j){
-			if(typeof(j.body.length) != 0){
+			//alert(j.body.length);
+			if(j.body.length != 0){
+				//alert("ici");
 				this.donnees = j.body;
 				InterfacePreparation.afficheCommande(this.donnees);
-			} else document.getElementById("preparationCommandes").innerHTML += "<p>Aucune expedition prévue pour la commande d'ID : "+id+"</p>";
+			} else InterfacePreparation.alertMessage("Aucune expedition prévue pour la commande d'ID : "+id);
+			//document.getElementById("preparationCommandes").innerHTML += "<p>Aucune expedition prévue pour la commande d'ID : "+id+"</p>";
 		})
+
+	
 	}
 
 };
 
 $("#preparationPanel").click(Preparation.RechercheAllExpeditions());
-//$("#preparationPanel").click(Preparation.RechercheExpedition(284));
-
-
-/*Preparation.client = "Anna";
-console.log(Preparation.client);
-Preparation.expedition();
-console.log(Preparation);*/
-
-
-function value(){
-
-Preparation.RechercheExpeditions();
-//console.log(typeof(Preparation.id));
-console.log(Preparation);
-
-}
-
-alert("fin prep.js");
+//$("#preparationPanel").click(Preparation.RechercheExpedition(28));
