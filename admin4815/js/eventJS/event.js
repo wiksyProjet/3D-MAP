@@ -643,8 +643,16 @@ $(document).ready(function(){
 
 	$("#preparationCommandes").on("click", ".ligCommande", function(){
 		var clicked = document.getElementById("ligCommande-clic");
-		if(clicked) clicked.removeAttribute("id");
+		if(clicked){
+			clicked.removeAttribute("id");
+			//document.getElementById("cadreCommande-clic").removeAttribute("id");
+		}
 		this.setAttribute("id","ligCommande-clic");
+		//this.setAttribute("id","cadreCommande-clic");
 	})
+
+	$(document).on("click", ".ligCommande", function(){
+		$(this).parent().next().find("#cadreCommande").slideToggle();
+	});
 
 });

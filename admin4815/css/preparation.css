@@ -26,11 +26,14 @@
   display: none;
 }
 
-.produitCommande-clic{
+#cadreCommande-clic{
+  display: initial;
+}
+/*.produitCommande-clic{
   display: inline-block;
   background-color: gray;
 }
 
 #numCommande-clic{
   background-color: green;
-}
+}*/
