@@ -23,12 +23,15 @@
 }*/
 
 #cadreCommande{
+  background-color: gray;
+  font-weight: bold;
   display: none;
 }
 
-#cadreCommande-clic{
+/*#cadreCommande-clic{
   display: initial;
-}
+}*/
+
 /*.produitCommande-clic{
   display: inline-block;
   background-color: gray;

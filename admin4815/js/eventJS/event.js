@@ -634,25 +634,36 @@ $(document).ready(function(){
 		}
 	});
 
-	//$(".ligCommande").click(function(){
-	/*$("#test").click(function(){
-		alert("jai cliqué");
-		//var row = this;
-		//this.setAttribute("ligCommande-clic");
-	});*/
 
+
+	//Fonction qui permet au bouton de se highlighter qd on clique dessus mais aussi de se déhighlghter qd on clique ailleurs
+	// + Cette fonction utilise la commande de Saravanan mais c'est devenu un peu barbare pcq j'ai fait en sorte que ça se slide si on
+	//clique ailleurs mais aussi si on clique sur nous-mm
+	//Et sinon bvvvv Saravanan !!
 	$("#preparationCommandes").on("click", ".ligCommande", function(){
 		var clicked = document.getElementById("ligCommande-clic");
+
 		if(clicked){
+
+			$("#ligCommande-clic").parent().next().find("#cadreCommande").slideToggle();
 			clicked.removeAttribute("id");
-			//document.getElementById("cadreCommande-clic").removeAttribute("id");
+
+			if(clicked.innerHTML != this.innerHTML){
+				this.setAttribute("id","ligCommande-clic");
+				$(this).parent().next().find("#cadreCommande").slideToggle();
+			}
+
+		} else {
+
+			this.setAttribute("id","ligCommande-clic");
+			$(this).parent().next().find("#cadreCommande").slideToggle();
 		}
-		this.setAttribute("id","ligCommande-clic");
-		//this.setAttribute("id","cadreCommande-clic");
+
 	})
 
-	$(document).on("click", ".ligCommande", function(){
+	//Code de Saravanan
+	/*$(document).on("click", ".ligCommande", function(){
 		$(this).parent().next().find("#cadreCommande").slideToggle();
-	});
+	});*/
 
 });
