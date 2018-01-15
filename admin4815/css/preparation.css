@@ -26,6 +26,7 @@
 .ligCommande{
   padding: 10px;
   font-size: 20px;
+  background-color: #FC5A6E;
 }
 
 #ligCommande-clic, #ligCommande:hover{
