@@ -25,10 +25,9 @@ var InterfacePreparation = {
 
       for(i in refs){
         order += "<div class='produitCommande'><img src='"+refs[i]+".jpg' alt='photo carte' width='300px' height='400px' style='padding-bottom:10px;'>";
-        order += "<span style='font-size:20px;padding-left:10px;'> Réference : "+refs[i]+"</span>";
-        order += "<span style='color:#DC143C;padding-left:10px;'>(Quantite = "+qte[i]+")</span>";
-        order +="<img style='padding-left:20px;' src='img/en_cours.jpg' alt='logo encours' width='130px' height='130px' /></div>";
-        }
+        order += "<span style='font-size:20px;padding-left:50px;'> Réference : "+refs[i]+"</span>";
+        order += "<span style='color:#DC143C;padding-left:50px;'>(Quantite = "+qte[i]+")</span></div>";
+      }
       order += "<span><button class='boutonsCommande' id='boutonExpedition'><img src='img/expedition.png' alt='logo expedition' width='40px' height='20px+' />Expédier</button>";
       order += "<button class='boutonsCommande' id='boutonFacture'><img src='img/impression.png' alt='logo impression' width='30px' height='20px' />Imprimer facture</button>"
       order += "<button class='boutonsCommande' id='boutonBon'><img src='img/impression.png' alt='logo impression' width='30px' height='20px' />Imprimer bon de livraison</button>"
@@ -65,6 +64,7 @@ var InterfacePreparation = {
 
   effaceCommande : function(data){
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     var row = document.getElementById(data.ID);
@@ -72,6 +72,9 @@ var InterfacePreparation = {
     setTimeout(function(){row.style.display = "none";},1500);
     //alert("expedition de la commande");
 >>>>>>> d35e476412d91563ad2206fe89a526ae92382c03
+=======
+    alert("expedition de la commande");
+>>>>>>> parent of 0f3f649... logo
   }
 
 };
