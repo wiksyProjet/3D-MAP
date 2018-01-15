@@ -42,9 +42,11 @@
 .cadreCommande{
   font-weight: bold;
   display: none;
-  border-radius:5px;
-  padding: 10px;
-  background-color:gray;
+  
+  border:5px double black;
+  padding: 20px;
+  /*padding-top: 15px;*/
+  background-color:white;
 }
 
 .boutonsCommande:hover{
