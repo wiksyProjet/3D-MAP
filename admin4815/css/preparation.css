@@ -9,12 +9,16 @@
   color : green;
 
 }
+.ligCommande{
+  padding: 10px;
+  font-size: 20px;
 
+}
 #ligCommande-clic{
   /*color : green;*/
   transition-duration: 0.4s;
   font-weight : bold;
-  background-color : #138fef;
+  background-color :#138fef ; /*#FF7F50;=> belle couleur orange*/
   color : white;
 }
 
@@ -30,6 +34,7 @@
   font-weight: bold;
   display: none;
   border-radius:5px;
+  padding: 10px;
   background-color:gray;
 }
 

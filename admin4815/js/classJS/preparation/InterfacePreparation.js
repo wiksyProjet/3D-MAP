@@ -24,8 +24,8 @@ var InterfacePreparation = {
       var order = "<tr><td id ='"+data[com].ID+"' class='cadreCommande' colspan=4><span id = 'numCommande'>"+data[com].ID+"</span></br>";
 
       for(i in refs){
-        order += "<div class='produitCommande'><img src='"+refs[i]+".jpg' alt='photo carte' width='110' height='200'>";
-        order += "<span> Réference : "+refs[i]+"</span>";
+        order += "<div class='produitCommande'><img src='"+refs[i]+".jpg' alt='photo carte' width='300px' height='400px' style='padding-bottom:10px;'>";
+        order += "<span style='font-size:20px;'> Réference : "+refs[i]+"</span>";
         order += "<span> (X "+qte[i]+")</span></div>";
       }
       order += "<span><button class='boutonsCommande' id='boutonExpedition'><img src='img/expedition.png' alt='logo expedition' width='40px' height='20px+' />Expédier</button>";
