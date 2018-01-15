@@ -42,8 +42,8 @@
 .cadreCommande{
   font-weight: bold;
   display: none;
-  
-  border:5px double black;
+
+  /*border:5px double black;*/
   padding: 20px;
   /*padding-top: 15px;*/
   background-color:white;
