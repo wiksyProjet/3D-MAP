@@ -1,4 +1,3 @@
-//alert("prep.js");
 
 var Preparation = {
 	donnees : [],
@@ -30,15 +29,33 @@ var Preparation = {
 
 	},
 
-	ExpedierCommande : function(IDdeLaCommande) {
+	ExpedierCommande : function(IDdeLaCommande) {	//comme la requête ne fonctionne pas, c'est encore expérimental
 		JNTP.execute(["setExpedition", {"expedier" : IDdeLaCommande}],function(j){
 			if(j.body.length != 0){
 				this.donnees = j.body;
-				j.expedition = true; //je crois, faut que je demande à Athmane
+				j.expedition = true;
 				InterfacePreparation.effaceCommande(this.donnees);
 			}
 			else InterfacePreparation.alertMessage("La commande d'ID : "+ IDdeLaCommande +" ne peut être expédiée");
 
+		})
+	},
+
+	ImprimerFacture : function(IDdeLaCommande) {
+		JNTP.execute(["getMedias", {"facture" : IDdeLaCommande}], function(j){
+			if(j.body.length != 0){
+				print(j);
+			}
+			else InterfacePreparation.alertMessage("Impossible d'imprimer la facture pour la commande d'ID : "+ IDdeLaCommande);
+		})
+	},
+
+	ImprimerBon : function(IDdeLaCommande) {
+		JNTP.execute(["getMedias", {"bon" : IDdeLaCommande}], function(j){
+			if(j.body.length != 0){
+				print(j);
+			}
+			else InterfacePreparation.alertMessage("Impossible d'imprimer le bon de livraison pour la commande d'ID : "+ IDdeLaCommande);
 		})
 	}
 
@@ -46,4 +63,3 @@ var Preparation = {
 };
 
 $("#preparationPanel").click(Preparation.RechercheAllExpeditions());
-//$("#preparationPanel").click(Preparation.RechercheExpedition(28));

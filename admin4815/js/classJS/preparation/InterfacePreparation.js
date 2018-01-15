@@ -63,7 +63,7 @@ var InterfacePreparation = {
   },
 
   effaceCommande : function(data){
-
+    alert("expedition de la commande");
   }
 
 };

@@ -668,8 +668,25 @@ $(document).ready(function(){
 		//console.log(id);
 		Preparation.ExpedierCommande(id);
 
-	})
+	}),
 
+	$("#preparationCommandes").on("click", "#boutonFacture", function(){
+
+		var cadre = $(this).parent().parent()[0];
+		id = cadre.getAttribute("id");
+
+		Preparation.ImprimerFacture(id);
+
+	}),
+
+	$("#preparationCommandes").on("click", "#boutonBon", function(){
+
+		var cadre = $(this).parent().parent()[0];
+		id = cadre.getAttribute("id");
+
+		Preparation.ImprimerBon(id);
+
+	})
 	//Code de Saravanan
 	/*$(document).on("click", ".ligCommande", function(){
 		$(this).parent().next().find("#cadreCommande").slideToggle();
