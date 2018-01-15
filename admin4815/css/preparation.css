@@ -1,11 +1,13 @@
 /*#preparationCommandes{
-  border-collapse: collapse;
-  border-radius : 25px;
+  border-collapse: initial;
 }*/
 
-#preparationCommandes tr{
-  border : 1px solid gray;
-  border-radius: 25px;  /*ne fonctionne pas */
+#preparationCommandes td {
+  border-bottom : 1px solid #c4c4c4;
+  border-radius;
+}
+#preparationCommandes th{
+  border-bottom: 2px solid #c4c4c4;
 }
 
 #alert{
@@ -25,13 +27,17 @@
   padding: 10px;
   font-size: 20px;
 
+
 }
 #ligCommande-clic{
+    background-color:#FF7F50;
+}
+#ligCommande-clic:hover{
   /*color : green;*/
   /*transition-duration: 0.4s;*/
   font-weight : bold;
-  /*background-color :#138fef ; /*#FF7F50;=> belle couleur orange*/
-  /*color : white;*/
+  background-color :#138fef ; /*=> belle couleur orange*/
+  color : white;
 }
 
 
