@@ -5,7 +5,7 @@ var InterfacePreparation = {
 
     for(var com in data){
 
-      var row = "<tr class = 'ligCommande'><td>"+data[com].refCommande+"</td>";
+      var row = "<tr class='ligCommande ligCommande-afaire'><td>"+data[com].refCommande+"</td>";
       row += "<td>"+data[com].livraison.nom+" "+data[com].livraison.prenom+"</td>";
       row += "<td>"+data[com].livraison.adresse+"</td>";
 
@@ -63,7 +63,10 @@ var InterfacePreparation = {
   },
 
   effaceCommande : function(data){
-    alert("expedition de la commande");
+    var row = document.getElementById(data.ID);
+    row.setAttribute('class','ligCommande ligCommande-validee');
+    setTimeout(function(){row.style.display = "none";},1500);
+    //alert("expedition de la commande");
   }
 
 };
