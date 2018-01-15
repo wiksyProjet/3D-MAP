@@ -21,12 +21,12 @@ var InterfacePreparation = {
       row += "<td>"+prixTotal.toFixed(2)+"</td></tr>";
       document.getElementById("preparationCommandes").innerHTML += row;
 
-      var order = "<tr><td id='cadreCommande' colspan=4><span id = 'numCommande'>"+data[com].ID+"</span></br>";
+      var order = "<tr><td id ='"+data[com].ID+"' class='cadreCommande' colspan=4><span id = 'numCommande'>"+data[com].ID+"</span></br>";
 
       for(i in refs){
         order += "<div class='produitCommande'><img src='"+refs[i]+".jpg' alt='photo carte' width='300px' height='400px' style='padding-bottom:10px;'>";
-        order += "<span style='font-size:20px;'> Réference : "+refs[i]+"</span>";
-        order += "<span> (X "+qte[i]+")</span></div>";
+        order += "<span style='font-size:20px;padding-left:50px;'> Réference : "+refs[i]+"</span>";
+        order += "<span style='color:#DC143C;padding-left:50px;'>(Quantite = "+qte[i]+")</span></div>";
       }
       order += "<span><button class='boutonsCommande' id='boutonExpedition'><img src='img/expedition.png' alt='logo expedition' width='40px' height='20px+' />Expédier</button>";
       order += "<button class='boutonsCommande' id='boutonFacture'><img src='img/impression.png' alt='logo impression' width='30px' height='20px' />Imprimer facture</button>"
