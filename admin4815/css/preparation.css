@@ -25,13 +25,13 @@
 .ligCommande{
   padding: 10px;
   font-size: 20px;
-
 }
+
 #ligCommande-clic:hover{
   /*color : green;*/
   transition-duration: 0.4s;
   font-weight : bold;
-  background-color :#138fef ; /*#FF7F50;=> belle couleur orange*/
+  background-color: #FF7F50 ; /*#FF7F50;=> belle couleur orange*/
   color : white;
 }
 
