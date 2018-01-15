@@ -2,9 +2,9 @@
   border-collapse: initial;
 }*/
 
-/*#preparationCommandes th, td{
+#preparationCommandes th, td{
   border : 1px solid gray;
-}*/
+}
 
 #alert{
   color : red;
