@@ -645,28 +645,19 @@ $(document).ready(function(){
 
 		if(clicked){
 
-			$("#ligCommande-clic").parent().next().find(".cadreCommande").slideToggle();
+			$("#ligCommande-clic").parent().next().find("#cadreCommande").slideToggle();
 			clicked.removeAttribute("id");
 
 			if(clicked.innerHTML != this.innerHTML){
 				this.setAttribute("id","ligCommande-clic");
-				$(this).parent().next().find(".cadreCommande").slideToggle();
+				$(this).parent().next().find("#cadreCommande").slideToggle();
 			}
 
 		} else {
 
 			this.setAttribute("id","ligCommande-clic");
-			$(this).parent().next().find(".cadreCommande").slideToggle();
+			$(this).parent().next().find("#cadreCommande").slideToggle();
 		}
-
-	}),
-
-	$("#preparationCommandes").on("click", "#boutonExpedition", function(){
-
-		var cadre = $(this).parent().parent()[0];
-		id = cadre.getAttribute("id");	//on récupére l'id de cadreCommande qui est l'id qui se trouve en bdd
-		//console.log(id);
-		Preparation.ExpedierCommande(id);
 
 	})
 
