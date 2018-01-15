@@ -94,7 +94,7 @@ $(document).ready(function(){
 		$("#listeIDMedia").fadeIn("slow");
 		$("#containResultProduct").empty();
 		$("#searchMediaList").val("");
-	});
+	});	
 
 
 	$("#validationProduct").click(function(){
@@ -333,8 +333,8 @@ $(document).ready(function(){
 	$( "#delai" ).change(function() {
 		var t = new Date().getTime();
 		t += (parseInt($("#delai").val()) * 24 * 3600 * 1000);
-
-		var date = new Date(t);
+		
+		var date = new Date(t); 
 		if($("#delai").val().includes("fin"))
 			date.setDate(28);
 
@@ -353,7 +353,7 @@ $(document).ready(function(){
 			'<div id="reponse" style="display:none">Client ajouté</div>'
 			);
 		$("#reponse").slideDown("normal");
-		setTimeout(function(){
+		setTimeout(function(){ 
 			$("#reponse").slideUp("normal");
 		}, 2000);
 	});
@@ -393,19 +393,19 @@ $(document).ready(function(){
 	$("#typeRecherche").change(function(){
 		var tags = Client.entrepriseTags;
 		switch($(this).val()){
-			case "entreprise" :
+			case "entreprise" : 
 			tags = Client.entrepriseTags;
 			break;
 			case "adresse" :
 			tags = Client.adresseTags;
 			break;
-			case "codePostal" :
+			case "codePostal" : 
 			tags = Client.codePostalTags;
 			break;
-			case "ville" :
+			case "ville" : 
 			tags = Client.villeTags;
 			break;
-			default :
+			default : 
 			tags = "";
 			break;
 		}
@@ -422,7 +422,7 @@ $(document).ready(function(){
 
 	$("#pointer").click(function(){
 		$('#containSearch').animate({
-			left : "0%",
+			left : "0%",	
 		}, 750, function(){
 			$("#pointer").fadeOut("slow");
 			$("#croix").fadeIn("slow");
@@ -432,7 +432,7 @@ $(document).ready(function(){
 	$("#croix").click(function(){
 		$("#croix").fadeOut("fast", function(){
 			$('#containSearch').animate({
-				left : "-18%",
+				left : "-18%",	
 			}, 750, function(){
 				$("#pointer").fadeIn("slow");
 			});
@@ -477,7 +477,7 @@ $(document).ready(function(){
 				$("#login").val(" ");
 				$("#mdp").val(" ");
 				$('#auth').animate({
-					marginTop: '+100%',
+					marginTop: '+100%',	
 				}, 750);
 				if(JNTP.Storage.privilege=="Administrateur"){
 					init();
@@ -500,7 +500,7 @@ $(document).ready(function(){
 			JNTP.execute(["auth", {"auth" : {"login" : login, "mdp" : mdp}}], function(j){
 				if(JNTP.authentified){
 					$('#auth').animate({
-						marginTop: '+100%',
+						marginTop: '+100%',	
 					}, 750);
 					if(JNTP.Storage.privilege=="Administrateur"){
 						init();
@@ -523,7 +523,7 @@ $(document).ready(function(){
 			JNTP.execute(["auth", {"auth" : {"login" : login, "mdp" : mdp}}], function(j){
 				if(JNTP.authentified){
 					$('#auth').animate({
-						marginTop: '+100%',
+						marginTop: '+100%',	
 					}, 750);
 					if(JNTP.Storage.privilege=="Administrateur"){
 						init();
