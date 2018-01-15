@@ -30,10 +30,18 @@
   background-color: gray;
   font-weight: bold;
   display: none;
+  border-radius:5px;
 }
 
 .boutonsCommande:hover{
   color : green;
+  background-color:lightgreen;
+}
+.boutonsCommande{
+	margin-top:10px;
+	margin-left:50px;
+	width:25%;
+	border-radius:10px;
 }
 /*#numCommande-clic{
   background-color: green;
