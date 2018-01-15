@@ -1,10 +1,11 @@
 /*#preparationCommandes{
-  border-collapse: initial;
+  border-collapse: collapse;
+  border-radius : 25px;
 }*/
 
-#preparationCommandes th, td{
+#preparationCommandes tr{
   border : 1px solid gray;
-  border-radius: 
+  border-radius: 25px;
 }
 
 #alert{
@@ -24,11 +25,11 @@
   font-size: 20px;
 
 }
-#ligCommande-clic:hover{
+#ligCommande-clic{
   /*color : green;*/
   transition-duration: 0.4s;
   font-weight : bold;
-  background-color :#138fef ; /*#FF7F50;=> belle couleur orange*/
+  background-color :#FF7F50;=> belle couleur orange*/
   color : white;
 }
 
