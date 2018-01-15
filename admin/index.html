@@ -78,8 +78,9 @@
 		<script type="text/javascript" src="js/classJS/recherche/recherche.js"></script>
 
 		<!-- Preparation -->
-		<!--<script type="text/javascript" src="js/classJS/preparation/Preparation.js"></script>-->
-		<!--<script type="text/javascript" src="js/classJS/preparation/InterfacePreparation.js"></script>-->
+		<!--<script type="text/javascript" src="js/classJS/preparation/Preparation.js"></script>
+		<script type="text/javascript" src="js/classJS/preparation/InterfacePreparation.js"></script>-->
+		<!--<script type="text/javascript" src="js/eventJS/event.js"></script>-->
 		<link rel="stylesheet" type="text/css" href="css/preparation.css">
 
 </head>
@@ -117,7 +118,7 @@
 		<pre id="dialog-content"></pre>
 	</div>
 
-	<!--<div id="auth">
+	<div id="auth">
 		<div id="contentAuth">
 			<h1>Authentification</h1>
 			<input type="text" name="username" placeholder="username" id="login">
@@ -125,7 +126,7 @@
 			<button class="btn btn-default" id="connexion">Connexion</button>
 			<p id="messageLogin"><span class="glyphicon glyphicon-warning-sign"></span>Erreur login</p>
 		</div>
-	</div>-->
+	</div>
 
 	<div class="container">
 		<div class="row">
@@ -1001,16 +1002,36 @@
 						En construction !
 					</div>
 					<div id="panels-8">
+<<<<<<< HEAD
+						En construction !
+						<table id="commandes">
+							<tr>
+									<th>N° Commande</th>
+									<th>Client</th>
+									<th>Adresse</th>
+									<th>Montant</th>
+							</tr>
+
+							<tr onclick = "value()" id="commande1">
+								<td>11234</td>
+								<td>Saravanan</td>
+								<td>Villetaneuse</td>
+								<td>325,75</td>
+							</tr>
+=======
 						<div class="ListePrep">
 							<table class="table table-striped" id="tablePrep">
 								<thead>
 									<tr>
+>>>>>>> 80424d5c36e9fd231285fd85ecc0edf1339b6128
 
 										<th>N° Commande  <img  src="img/commande.png" alt="logo commande" width="40px" height="40px" /></th>
 										<th>Client  <img src="img/client.png" alt="logo client" width="30px" height="30px" /></th>
 										<th>Adresse   <img src="img/localisation.png" alt="logo localisation" width="30px" height="30px" /></th>
 										<th>Montant  <img src="img/logoArgent.png" alt="logo dollars" width="20px" height="20px" /></th>
 
+<<<<<<< HEAD
+=======
 									</tr>
 								</thead>
 								<tbody>
@@ -1045,7 +1066,17 @@
 							</table>
 						</div>
 
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+						<table class="nav" id="commande">
+							<div>
+								<tr  colspan=3><th>Commande n° 11234</th></tr>
+							</div>
+=======
+>>>>>>> 80424d5c36e9fd231285fd85ecc0edf1339b6128
+>>>>>>> d601a99d529bec61703b98ea0519d46b3b22e4f8
 						<table id="commande">
 
 							<tr colspan=3><th colspan=4 style="background-color:blue;"> <img src="img/commande.png" alt="logo commande" width="80px" height="80px" /><font color=white size=12>Commande n° 11234</font></th></tr>
@@ -1064,37 +1095,25 @@
 							</tr>
 
 							<tr id="boutons">
+<<<<<<< HEAD
+								<td colspan=3>
+									<button id="boutonExpedition">Expédier</button>
+									<button id="boutonFacture">Imprimer facture</button>
+									<button id="boutonBonLivraison">Imprimer bon de livraison</button>
+=======
 								<td colspan=4>
 									<button onclick="expedition()" id="expedition"><img src="img/expedition.png" alt="logo expedition" width="40px" height="20px" />  Expédier</button>
 									<button onclick="impressionFacture()"><img src="img/impression.png" alt="logo impression" width="30px" height="20px" />Imprimer facture</button>
 									<button onclick="impressionBon()"><img src="img/impression.png" alt="logo impression" width="30px" height="20px" />Imprimer bon de livraison</button>
 
+>>>>>>> 80424d5c36e9fd231285fd85ecc0edf1339b6128
 								</td>
 							</tr>
 						</table>
 
-						<!--<script type="text/javascript" src="js/classJS/preparation/Preparation.js"></script>-->
+
+						<script type="text/javascript" src="js/classJS/preparation/Preparation.js"></script>
 						<script type="text/javascript" src="js/classJS/preparation/InterfacePreparation.js"></script>
-
-							<!--<div>
-								<h1>Numero de commande</h1>
-								<div class="produits">	<!ça c'st la div qui represente le cadre qui apparait qd on clique sur une commande, ici faudra utiliser js je pense et faire les affichages en fction de ce qu'on a dans la bdd>
-										<span>001</span>
-										<img id="photoCarte" src="emoji-content.png" alt="image"/>
-										<span>X 3</span>
-								</div>
-								<div class="produits">
-										<span>002</span>
-										<img id="photoCarte" src="emoji-content.png" alt="image"/>
-										<span>X 12</span>
-								</div>
-								<div id="boutons">
-									<!form method="GET" action="#">
-										<input type="button" value="Expédier">
-									</form>>
-
-							</div>-->
-
 
 					</div>
 				</div>
