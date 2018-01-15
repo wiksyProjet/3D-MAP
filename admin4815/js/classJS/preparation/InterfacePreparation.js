@@ -28,7 +28,7 @@ var InterfacePreparation = {
         order += "<span> Réference : "+refs[i]+"</span>";
         order += "<span> (X "+qte[i]+")</span></div>";
       }
-      order += "<span><button class='boutonsCommande' id='boutonExpedition'>Expédier</button>";
+      order += "<span><button class='boutonsCommande' id='boutonExpedition'><img src='img/expedition.png' alt='logo expedition' width='40px' height='20px+' />Expédier</button>";
       order += "<button class='boutonsCommande' id='boutonFacture'>Imprimer facture</button>"
       order += "<button class='boutonsCommande' id='boutonBon'>Imprimer bon de livraison</button>"
       order += "</span></td></tr>";
