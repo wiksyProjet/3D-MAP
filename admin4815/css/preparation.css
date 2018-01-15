@@ -19,10 +19,9 @@
 
 
 .ligCommande:hover{
-  font-weight : bold;
+  color : green;
 
 }
-
 .ligCommande{
   padding: 10px;
   font-size: 20px;
@@ -35,31 +34,17 @@
 }
 #ligCommande-clic:hover{
   /*color : green;*/
-  /*transition-duration: 0.4s;*/
+  transition-duration: 0.4s;
   font-weight : bold;
   background-color :#138fef ; /*=> belle couleur orange*/
   color : white;
 
 }
 
+/*#ligCommande-expediee{
 
-.ligCommande-encours{
-  transition-duration: 0.4s;
-  background-color : #FF7F50; /*=> belle couleur orange*/
-  transition-duration: 0.4s;
-}
+}*/
 
-.ligCommande-validee{
-  transition-duration: 0.4s;
-  background-color : #4bd86f; /* vert */
-  transition-duration: 0.4s;
-}
-
-.ligCommande-afaire{
-  transition-duration: 0.4s;
-  background-color: #fc5a6e; /*rouge*/
-  transition-duration: 0.4s;
-}
 /*.produitCommande, #numCommande{
   display: none;
 }*/
@@ -71,14 +56,13 @@
   /*border:5px double black;*/
   padding: 20px;
   /*padding-top: 15px;*/
-  background-color: #c4bcbd;  /*gris */
+  background-color:white;
 }
 
 .boutonsCommande:hover{
   color : green;
   background-color:lightgreen;
 }
-
 .boutonsCommande{
 	margin-top:10px;
 	margin-left:50px;

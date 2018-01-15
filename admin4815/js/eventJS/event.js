@@ -645,20 +645,18 @@ $(document).ready(function(){
 
 		if(clicked){
 
-			$("#ligCommande-clic").parent().next().find(".cadreCommande").slideToggle("slow");
+			$("#ligCommande-clic").parent().next().find(".cadreCommande").slideToggle();
 			clicked.removeAttribute("id");
 
 			if(clicked.innerHTML != this.innerHTML){
 				this.setAttribute("id","ligCommande-clic");
-				this.setAttribute("class","ligCommande ligCommande-encours");
-				$(this).parent().next().find(".cadreCommande").slideToggle("slow");
+				$(this).parent().next().find(".cadreCommande").slideToggle();
 			}
 
 		} else {
 
 			this.setAttribute("id","ligCommande-clic");
-			this.setAttribute("class","ligCommande ligCommande-encours");
-			$(this).parent().next().find(".cadreCommande").slideToggle("slow");
+			$(this).parent().next().find(".cadreCommande").slideToggle();
 		}
 
 	}),
