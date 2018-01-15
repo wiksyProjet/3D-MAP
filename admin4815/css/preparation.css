@@ -2,7 +2,7 @@
   border-collapse: initial;
 }*/
 
-#preparationCommandes tr{
+#preparationCommandes th, td{
   border : 1px solid gray;
 }
 
@@ -39,7 +39,7 @@
   display: none;
 }*/
 
-#cadreCommande{
+.cadreCommande{
   font-weight: bold;
   display: none;
   border-radius:5px;
