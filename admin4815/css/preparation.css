@@ -30,6 +30,7 @@
 }
 #ligCommande-clic{
     background-color:#FF7F50;
+  
 }
 #ligCommande-clic:hover{
   /*color : green;*/
@@ -37,6 +38,7 @@
   font-weight : bold;
   background-color :#138fef ; /*=> belle couleur orange*/
   color : white;
+
 }
 
 /*#ligCommande-expediee{
