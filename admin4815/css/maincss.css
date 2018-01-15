@@ -102,13 +102,21 @@ label{
 
 
 
+<<<<<<< HEAD
 input{
+=======
+input{	
+>>>>>>> 83c9f12a637b4a1f9f96f1a4fdeb73ab84f8685e
 	border : none;
 	border-bottom: 2px solid #7f7f7f;
 	background-color: white;
 	padding-top : 1.5%;
 	width: 85%;
+<<<<<<< HEAD
 	outline: none;
+=======
+	outline: none; 
+>>>>>>> 83c9f12a637b4a1f9f96f1a4fdeb73ab84f8685e
 }
 
 /*Fin style générique*/
@@ -170,12 +178,20 @@ input{
 /*Panel de recherche*/
 
 #containSearch{
+<<<<<<< HEAD
 	width: 20%;
+=======
+	width: 20%;	
+>>>>>>> 83c9f12a637b4a1f9f96f1a4fdeb73ab84f8685e
 	height: 100%;
 	max-height: 100%;
 	background-color: #7a7a7a;
 	position  : fixed;
+<<<<<<< HEAD
 	overflow-x: visible !important;
+=======
+	overflow-x: visible !important; 
+>>>>>>> 83c9f12a637b4a1f9f96f1a4fdeb73ab84f8685e
 	left: -18%;
 	z-index: 2;
 	text-align: center;
@@ -239,7 +255,11 @@ input{
 .containLabel label{
 	display: inline-block;
 	text-align: right !important;
+<<<<<<< HEAD
 	width: 40%;
+=======
+	width: 40%; 
+>>>>>>> 83c9f12a637b4a1f9f96f1a4fdeb73ab84f8685e
 }
 
 .containLabel input{
@@ -280,4 +300,8 @@ input{
 	overflow-y: scroll;   /* prevent horizontal scrollbar */
 	overflow-x: hidden; /* add padding to account for vertical scrollbar */
 	z-index:1000 !important;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 83c9f12a637b4a1f9f96f1a4fdeb73ab84f8685e

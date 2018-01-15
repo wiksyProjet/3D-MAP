@@ -1,9 +1,18 @@
+/*#preparationCommandes{
+  border-collapse: initial;
+}*/
+
+#preparationCommandes th, td{
+  border-bottom: 1px solid gray;
+}
+
 #alert{
   color : red;
   font-size : 30px;
   text-align : center;
   padding :8px;
 }
+
 
 .ligCommande:hover{
   color : green;
@@ -14,7 +23,7 @@
   font-size: 20px;
 
 }
-#ligCommande-clic{
+#ligCommande-clic:hover{
   /*color : green;*/
   transition-duration: 0.4s;
   font-weight : bold;
@@ -30,12 +39,14 @@
   display: none;
 }*/
 
-#cadreCommande{
+.cadreCommande{
   font-weight: bold;
   display: none;
-  border-radius:5px;
-  padding: 10px;
-  background-color:gray;
+
+  /*border:5px double black;*/
+  padding: 20px;
+  /*padding-top: 15px;*/
+  background-color:white;
 }
 
 .boutonsCommande:hover{
