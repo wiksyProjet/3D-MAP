@@ -1,0 +1,283 @@
+/*JQUERY EDIT*/
+.deleteZone{
+	border: 3px dashed #ff0000 !important;
+}
+
+html .menuPanel{
+	border : none !important;
+}
+
+html .menuPanel a{
+	padding : 1em !important;
+}
+
+#panels{
+	border : none;
+	background-color: #f9fbfe;
+	border: 1px solid #d8d1d5;
+}
+
+.ui-dialog{
+	background-color: #ffff9b;
+}
+
+.dialog-content{
+	background-color: #ffffe0;
+}
+
+
+/*Profil user en haut à droite*/
+#userProfil{
+	vertical-align: middle;
+	display: none;
+	position: absolute;
+	top : 2%;
+	right: 25%;
+	z-index: 5;
+}
+
+#userProfil span{
+	margin-right: 5px;
+}
+
+#userPrivilege{
+	vertical-align: middle;
+	display: none;
+	position: absolute;
+	top : 2%;
+	right: 15%;
+	z-index: 5;
+}
+
+#userPrivilege span{
+	margin-right: 5px;
+}
+
+/*Style générique*/
+body{
+	height: 100%;
+	overflow-y: scroll;
+	background-color: #fafbfe;
+}
+
+::-webkit-scrollbar {
+	width: 0px;
+}
+
+select{
+	border : none;
+	border-bottom: 2px solid #7f7f7f;
+	outline : none;
+	background-color: white;
+}
+
+
+table{
+	margin-top: 1%;
+	margin-left:10%; 
+	width: 80%;
+}
+
+table select{
+	width: 300px;
+}
+
+table input{
+	width: 100px;
+}
+
+tr select, tr input{
+	margin-top : 2%;
+}
+
+
+*{
+	margin : 0;
+	padding : 0;
+}
+
+label{
+	display: block;
+}
+
+
+
+input{
+	border : none;
+	border-bottom: 2px solid #7f7f7f;
+	background-color: white;
+	padding-top : 1.5%;
+	width: 85%;
+	outline: none;
+}
+
+/*Fin style générique*/
+
+
+/*Authentification style*/
+
+#auth{
+	background-color: rgba(20, 32, 37, 1);
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	position : fixed;
+	z-index: 3;
+}
+
+
+#contentAuth{
+	margin-top: 20%;
+}
+
+#contentAuth h1{
+	color : white;
+	font-size: 40px;
+}
+
+#contentAuth button{
+	border: none;
+	background-color : #d0d0d0;
+	margin-top: 1%;
+	padding : 5px;
+	width: 10%;
+}
+
+#contentAuth input{
+	font-size: 15px;
+	background-color: rgba(20, 32, 37, 1);
+	width: 20%;
+	display: block;
+	margin-left: 40%;
+	color : white;
+}
+
+#messageLogin{
+	display: none;
+	color : white;
+	margin-top: 1%;
+	background-color: #d11919;
+	padding: .5%;
+	width: 15%;
+	margin-left: 42.5%;
+}
+
+#messageLogin span{
+	margin-right: 5%;
+}
+
+
+/*Panel de recherche*/
+
+#containSearch{
+	width: 20%;
+	height: 100%;
+	max-height: 100%;
+	background-color: #7a7a7a;
+	position  : fixed;
+	overflow-x: visible !important;
+	left: -18%;
+	z-index: 2;
+	text-align: center;
+	color : white;
+}
+
+#search{
+	width: 100%;
+	padding : 0;
+	margin: 0;
+}
+
+#pointer{
+	position: absolute;
+	color : red;
+	z-index: 3;
+	top : 50%;
+	left : 100%;
+}
+
+#pointer:hover {
+	cursor: pointer;
+	transform : scale(1.5)
+}
+
+#croix{
+	text-align: right;
+	position: absolute;
+	right: 2%;
+	display: none;
+}
+
+#croix:hover{
+	cursor: pointer;
+}
+
+#containSearch input{
+	background-color: #7a7a7a;
+	border-bottom: 2px solid white;
+	display: block;
+	width: 50%;
+	margin-left: 25%;
+}
+
+#containSearch input::-webkit-input-placeholder{
+	color : rgba(255, 255, 255, 0.42);
+}
+
+#containSearch button{
+	color : #7a7a7a;
+	background-color: white;
+	border : none;
+	padding : 1.5%;
+	margin-top : 2%;
+	width: 50%;
+	margin-left: 25%;
+	display: block;
+}
+
+
+.containLabel label{
+	display: inline-block;
+	text-align: right !important;
+	width: 40%;
+}
+
+.containLabel input{
+	width: 30px !important;
+	display: inline-block !important;
+	text-align: left;
+	margin : 0 !important;
+}
+
+#containMontant input{
+	display: inline-block;
+	margin : 0;
+	width: 20%;
+}
+
+#containMontant select{
+	background-color: #7a7a7a;
+	border : 1px solid white;
+}
+
+#erreurRechercheFacture{
+	padding: 1%;
+	padding-top: 2%;
+	margin-top: 3%;
+	background-color : #ff3232;
+	width: 60%;
+	margin-left: 20%;
+}
+/*CSS ACCORDEON*/
+
+.ui-accordion-content{
+	padding : 0!important;
+}
+
+.ui-autocomplete{
+	width: 200px;
+	max-height: 300px;
+	overflow-y: scroll;   /* prevent horizontal scrollbar */
+	overflow-x: hidden; /* add padding to account for vertical scrollbar */
+	z-index:1000 !important;
+}

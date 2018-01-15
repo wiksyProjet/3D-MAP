@@ -1,0 +1,94 @@
+/*LISTE USERS*/
+.listeUser{
+	width: 100%;
+}
+
+#tableUser {
+	margin: 0;
+	text-align: center;
+	width: 100%;
+}
+
+#tableUser thead, #tableUser tbody, #tableUser tr, #tableUser td, #tableUser th { display: block; }
+
+#tableUser tr:after {
+	content: ' ';
+	display: block;
+	visibility: hidden;
+	clear: both;
+}
+
+#tableUser thead th {
+	text-align: center;
+	height: 30px;
+}
+
+#tableUser tbody {
+	height: 120px;
+	overflow-y: auto;
+}
+
+
+#tableUser tbody td, #tableUser thead th {
+	width: 33.33%;
+	float: left;
+}
+
+#tableUser tbody td{
+	padding : 0;
+	white-space: nowrap;
+	overflow-x: hidden;
+}
+
+
+.ligneUser:hover{
+	cursor: pointer;
+}
+
+.colUser:hover{
+	cursor : pointer;
+	background-color: #f3f2f2;
+}
+
+/*Formulaire*/
+
+#formUser{
+	margin-left: 5%;
+}
+
+#formUser .inputContainer{
+	display: inline-block;
+	width: 40%;
+}
+
+#formUser label{
+	margin : 0;
+	margin-top: 5%;
+}
+
+#formUser input{
+	padding: 0;
+	background-color: #f9fbfe;
+}
+
+#priviUser{
+	width: 85%;
+	background-color: #f9fbfe;
+	padding-top: 2%;
+}
+
+/*#showMdpUser{
+	display: none;
+	position: absolute;
+    width: 120px;
+    border: none;
+    top: 50%;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.16);
+}*/
+
+hr {
+  margin: 50px 0px 10px 0px;
+  border: 0;
+  border-top: 2px solid rgba(0, 0, 0, 0.5);
+}
