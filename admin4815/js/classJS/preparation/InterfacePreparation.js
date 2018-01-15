@@ -63,18 +63,10 @@ var InterfacePreparation = {
   },
 
   effaceCommande : function(data){
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
     var row = document.getElementById(data.ID);
     row.setAttribute('class','ligCommande ligCommande-validee');
     setTimeout(function(){row.style.display = "none";},1500);
     //alert("expedition de la commande");
->>>>>>> d35e476412d91563ad2206fe89a526ae92382c03
-=======
-    alert("expedition de la commande");
->>>>>>> parent of 0f3f649... logo
   }
 
 };
