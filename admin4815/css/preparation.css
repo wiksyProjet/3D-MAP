@@ -2,9 +2,12 @@
   border-collapse: initial;
 }*/
 
-#preparationCommandes th, td{
-  border : 1px solid gray;
-  border-radius: 
+#preparationCommandes td {
+  border-bottom : 1px solid #c4c4c4;
+  border-radius;
+}
+#preparationCommandes th{
+  border-bottom: 2px solid #c4c4c4;
 }
 
 #alert{
