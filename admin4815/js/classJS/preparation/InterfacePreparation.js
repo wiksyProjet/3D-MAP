@@ -21,7 +21,7 @@ var InterfacePreparation = {
       row += "<td>"+prixTotal.toFixed(2)+"</td></tr>";
       document.getElementById("preparationCommandes").innerHTML += row;
 
-      var order = "<tr><td id='cadreCommande' colspan=4><span id = 'numCommande'>"+data[com].ID+"</span></br>";
+      var order = "<tr><td id ='"+data[com].ID+"' class='cadreCommande' colspan=4><span id = 'numCommande'>"+data[com].ID+"</span></br>";
 
       for(i in refs){
         order += "<div class='produitCommande'><img src='"+refs[i]+".jpg' alt='photo carte' width='110' height='200'>";
