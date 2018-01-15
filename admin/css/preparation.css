@@ -7,8 +7,6 @@
   color : white;
   margin : 0;
 }*/
-
-
 #tablePrep thead, #tablePrep tbody, #tablePrep tr, #tablePrep td, #tablePrep th { display: block; }
 
 #tablePrep tr:after {
@@ -20,13 +18,12 @@
 
 #tablePrep thead th {
 	text-align: center;
-	height: 42px;
+	height: 30px;
 }
 
 #tablePrep tbody {
-	height: 250px ; /* auto, on l'a retire pour le scroll */
+	height: 120px;
 	overflow-y: auto;
-
 }
 
 #tablePrep tbody td, #tablePrep thead th {
@@ -49,10 +46,6 @@
 }
 .ListePrep{
   width:100%;
-}
-
-#tablePrep thead th{
-  margin-bottom: 5px;
 }
 /*#boutons button{
   border : 3px solid green;
